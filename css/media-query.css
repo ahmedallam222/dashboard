@@ -1,0 +1,151 @@
+                @import url("/css/mediaquery.css");
+                /*
+320px
+480px
+600px
+768px
+900px
+1024px
+1200px
+ */
+                /* Start Header */
+                
+                @media screen and (max-width: 768px) {
+                    header .left .logo {
+                        display: none;
+                    }
+                    .logoo {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: .5rem;
+                    }
+                    header .left .search {
+                        margin-left: .5rem;
+                    }
+                    header .right button {
+                        margin-right: 6px;
+                    }
+                }
+                
+                @media screen and (max-width: 600px) {
+                    .logoo {
+                        display: none;
+                    }
+                    header .left .search {
+                        margin-left: .1rem;
+                    }
+                    header .right {
+                        display: none;
+                    }
+                    .right2 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 10px;
+                    }
+                    header .left {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 5px;
+                    }
+                    .menu {
+                        display: none;
+                    }
+                    .menu2 {
+                        display: block;
+                        position: fixed;
+                        top: 28px;
+                        left: 4px;
+                    }
+                    .sidebar {
+                        display: none;
+                    }
+                }
+                
+                @media screen and (min-width: 600px) {
+                    .menu2 {
+                        display: none;
+                    }
+                }
+                
+                @media screen and (max-width: 480px) {
+                    header .left .search {
+                        margin: 0px 0px 0 -5px;
+                    }
+                }
+                /* END HEADER */
+                /* START projects */
+                
+                @media screen and (max-width: 1024px) {
+                    .container-projects .projects .parent {
+                        width: calc(100% / 2);
+                    }
+                }
+                
+                @media screen and (max-width: 900px) {
+                    .client-messages {
+                        display: none;
+                    }
+                    header .right button {
+                        margin-right: 0.5rem;
+                    }
+                }
+                
+                @media screen and (min-width: 900px) {
+                    #other-messages {
+                        display: none;
+                    }
+                }
+                
+                @media screen and (max-width: 900px) {
+                    body {
+                        height: 100vh;
+                    }
+                    #other-messages {
+                        display: block;
+                        margin-left: 0;
+                        overflow: auto;
+                        width: 100%;
+                    }
+                    #other-messages .messge .left-center-w {
+                        text-align: center
+                    }
+                }
+                
+                @media screen and (max-width: 480px) {
+                    .right2 {
+                        justify-content: end;
+                    }
+                    .container-projects .projects .parent {
+                        width: calc(100% / 1);
+                    }
+                    .container-projects .project-title1,
+                    .container-projects .project-title2 {
+                        margin-bottom: 2.5rem;
+                    }
+                    .container-projects .project-title2 {
+                        flex-direction: column;
+                    }
+                    .right-project-title2 {
+                        margin-top: 1rem;
+                    }
+                    .left-project-title2 {
+                        margin-bottom: 1rem;
+                        display: block;
+                    }
+                    .left-project-title2 .numbers-words {
+                        margin-bottom: 1rem;
+                    }
+                    .right-project-title2 a {
+                        margin-right: 2rem;
+                    }
+                }
+                
+                @media screen and (min-width: 480px) {
+                    .right-project-title2 a {
+                        margin-right: 2rem;
+                    }
+                }
+                /* END projects */
